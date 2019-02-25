@@ -1,12 +1,95 @@
 /*
   DIAGNOSTIC STYLING
 */
-body {
-  background: gray;
+/* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+ */
+/* Doodle Stage */
+
+
+#stage {
+  outline: 1px dotted black;
+ /* Fixed Sizes */
+  height: 300px;
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://media.pitchfork.com/photos/5a21b59a6dd6a743aef5aa42/2:1/w_1000/masterofpuppets.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
 }
 
-* {
-  outline: 1px dotted black;
+svg path {
+fill: red;
+}
+
+#stage {
+margin: auto;
+margin-top: 100px;
+}
+
+#crossmid {
+width: 150px;
+height: 225px;
+position: absolute;
+bottom: -60px;
+left: 150px;
+width: 300px;
+}
+
+#crossright {
+width: 150px;
+height: 225px;
+position: absolute;
+bottom: -60px;
+left: 400px;
+width: 300px;
+}
+#crossleft {
+width: 150px;
+height: 225px;
+position: absolute;
+bottom: -60px;
+left: -90px;
+width: 300px;
+}
+#google {
+text-shadow: 2px 2px 5px grey;
+color: white;
+font-size: 105px;
+position: absolute;
+left: 30px;
+top: 280px;
+transition: 1s;
+}
+#stage:hover #google {
+  left: 25px;
+  top: 10px;
+}
+
+#background {
+width: 100%;
+object-fit: fit;
+background-repeat: none;
+}
+
+#google {
+  transform: flash;}
+
+.googlesearch {
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100px;
+margin: auto;
+margin-top: 50px;
+width: 30%;
+}
+
+#search {
+display: flex;
+justify-content: center;
+margin-top: 10px;
 }
 
 /* Your Awesome Scripts */
